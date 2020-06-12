@@ -20,10 +20,10 @@ body {
   
   .button {
     position: absolute;
-    right: 50px;
+    right: 20px;
     top: 20px;
     padding: 10px;
-    width: 140px;
+    width: 120px;
     height: 45px;
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
