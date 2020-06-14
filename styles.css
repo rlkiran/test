@@ -22,13 +22,13 @@ body {
   position: absolute;
   right: 20px;
   top: 20px;
-  padding: 7px;
-  width: 12%;
-  height: 6%;
+  padding: 5px;
+  width: 8%;
+  height: 5%;
   font-family: 'Roboto', sans-serif;
-  font-size: 1vw;
+  font-size: .8vw;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 1px;
   font-weight: 500;
   color: #000;
   background-color: #fff;
