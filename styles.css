@@ -1,79 +1,65 @@
 body {
-  background-color: #f7eceb;
-  color: #ffffff;
-  margin: 0px;
+    background-color: #f7eceb;
+    color: #ffffff;
+    margin: 0px;
+}
+
+
+.container-main {
   position: relative;
-}
-
-.bimg {
-  width: 100%;
-  height: auto;
-  box-shadow: 0px 25px 20px rgba(46, 229, 157, 0.4);
-}
-
-.wrap {
-  height: 100%;
-  display: flex;
-  align-items: right;
+  background-image:url("/imgs/b1.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  width: auto;
+  height: 100vh;
+  background-size: cover;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  font-size: 6vw;
 }
 
-.button {
+
+.title {
   position: absolute;
-  right: 20px;
-  top: 20px;
-  padding: 5px;
-  width: 8%;
-  height: 5%;
-  font-family: 'Roboto', sans-serif;
-  font-size: .8vw;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  }
-
-.button:hover {
-  background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
+  top: 30%;
+  left: 12%;
+  font-size: 6vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(0, 0, 0);
 }
 
-.typewriter {
-position: absolute;
-top: 35%;
-left: 55%;
-transform: translate(-50%, -50%);
+.title p {
+  font-family: 'Balsamiq Sans';
 }
 
-.typewriter p {
-  font-size:5vw;
-  overflow: hidden; 
-  border-right: .15em solid white; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .20em; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.typewrite {
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  font-size: 4vw;
+  color: rgb(0, 0, 0);
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.noHover{
+  pointer-events: none;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
+.container-services {
+  margin: 0px;
+  background-color: #c3eca7;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #000000;
 }
+
+
+
+
+/* .container-main h1 {
+} */
