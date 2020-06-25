@@ -1,3 +1,13 @@
+// navbar
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
+
+//TypeWriter
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -39,18 +49,20 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
+
 window.onload = function() {
+    var data_period = 2000;
+    var data_type = '[ "Online Services.", "Man Power Services.", "Financial Services." ]';
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
+        var toRotate = data_type;
         if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+          new TxtType(elements[i], JSON.parse(toRotate), data_period);
         }
     }
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
