@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experts Online Services</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
-    <title>Experts Online Services</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -21,9 +24,9 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="contact.html" class="inactive">Contact Us</a></li>
+                <li><a href="about.html"  class="inactive">About Us</a></li>
             </ul>
         </div>
     </nav>
@@ -37,30 +40,70 @@
 			</a>
 		  </h1>
     </div>
+    <header class="main-header">
+      <h1>Our Services</h1>
+      <span class="underline"></span>
+    </header>
+    <main class="container">
+        <section class="card">
+          <img src="/images/1.png" alt="" />
+          <div>
+            <h3>Online Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+              enim laudantium, animi veniam libero eveniet culpa unde perferendis
+              illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+              officia. Ab, delectus.
+            </p>
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+        </section>
+  
+        <section class="card" data-aos="fade-left">
+          <img src="/images/man.png" alt="" />
+          <div>
+            <h3>Man Power Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+              enim laudantium, animi veniam libero eveniet culpa unde perferendis
+              illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+              officia. Ab, delectus.
+            </p>
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+        </section>
+  
+        <section class="card" data-aos="fade-right">
+          <img src="/images/woman.png" alt="" />
+          <div>
+            <h3>Financial Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+              enim laudantium, animi veniam libero eveniet culpa unde perferendis
+              illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+              officia. Ab, delectus.
+            </p>
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+        </section>
+  
+        <section class="card" data-aos="fade-left">
+          <img src="/images/id.png" alt="" />
+          <div>
+            <h3>Other Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+              enim laudantium, animi veniam libero eveniet culpa unde perferendis
+              illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+              officia. Ab, delectus.
+            </p>
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+        </section>
 
-    <div class="container-item">
-        <img src="/images/1.png">
-        <div class="cont-item">
-            <div class="head-item">
-                Online Services
-            </div>
-            <div class="text-item">
-                Content
-            </div>
-        </div>
-    </div>
-    <div class="container-item">
-        <div class="cont-item">
-            <div class="head-item">
-                Man Power Services
-            </div>
-            <div class="text-item">
-                Content
-            </div>
-        </div>
-        <img src="/images/1.png">
-    </div>    
-
-
+      </main>
+      <div class="main-footer">
+        <h4>Copyright 2020 © All rights Reserved.</h4>
+      </div>
 </body>
 </html>

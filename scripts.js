@@ -65,4 +65,12 @@ window.onload = function() {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
+    
 };
+
+//AOS
+AOS.init({
+    offset: 200, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000 // values from 0 to 3000, with step 50ms
+  });
