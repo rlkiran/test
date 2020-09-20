@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    border: 0;
+}
+
+.card-cont {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card {
+    background-color: white;
+    box-shadow: 10px 9px 27px -10px rgba(0,0,0,0.75);
+
+    min-width: 400px;
+    border: 1px black solid;
+    font-size: 1.2rem;
+    margin: 1rem 4rem;
+    display: grid;
+    height: 20%;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-areas:
+        "sno dpt sa"
+
+    ;
+}
+
+.sno {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card span {
+    border-bottom: 1px black solid;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card span:first-child {
+    background-color: green;
+    font-weight: 900;
+}
+.card span:last-child {
+ border-bottom: transparent;
+}
+
+.dpt {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten;
+    text-align: center;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+.dpt1 {
+    background-image: url(/images/aadhaarr.webp);
+}
+
+.dpt2 {
+    background-image: url(/images/rice-card.jpg);
+}
+
+.dpt3 {
+    background-image: url(/images/rev.jpg);
+}
+
+.dpt4 {
+    background-image: url(/images/mun2.jpg);
+}
+
+.dpt h2  {
+    padding-top: 5rem;
+}
+
+.sa {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
