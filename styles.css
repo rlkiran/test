@@ -25,9 +25,9 @@ body{
 }
 
 .brand-icon {  
-    margin: 8px;
-    width: 25px;
-    height: 25px;
+    margin: 10px;
+    width: 55px;
+    height: 15px;
 }
 
 .brand-title {
@@ -87,26 +87,30 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 600px;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.header-title {
+/* .header-title {
     color: black;
     text-align: center;
     font-size: 5rem;
-}
+} */
 
+.header-item img {
+    width: 60%;
+
+}
 
 .typewrite {
     text-decoration: none;
     text-align: center;
-    top: 60%;
+    top: 20%;
     left: 50%;
-    font-size: 2.1rem;
-    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
 }
   
 .noHover{
@@ -193,7 +197,7 @@ body{
 }
 
   .footer {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     padding: 1.5%;
@@ -212,6 +216,29 @@ body{
     text-align: center;
 
  }
+
+
+.about-container {
+    box-shadow: -4px 7px 25px 0px rgba(0,0,0,0.25);
+    position: relative;
+    background-color: #ffffff;
+    padding: 7rem;
+    margin: 0rem 5rem 5rem 5rem;
+}
+
+.about-container h1 {
+    text-align: center;
+    padding-bottom: 2%;
+    margin-top: -4rem;
+}
+
+.about-container p { 
+    padding: 1rem 4rem;
+}
+
+.about-container ul {
+    padding: 0rem 7rem;
+}
 
 @media (max-width: 700px) {
     .toggle-button {
