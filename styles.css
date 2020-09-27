@@ -82,37 +82,56 @@ body {
 
 .float-button {
   position: fixed;
-  
-  padding: 1rem;
+  padding: 0.8rem;
+  font-size: 0.9rem;
   box-shadow: 2px 14px 25px 0px rgba(0,0,0,0.68);
-
+  text-align: center;
   background-color: green;
   color: white;
   
-  transition: all 0.2s ease-in 0s;
+  transition: all 0.2s;
   z-index: 9999;
   cursor: pointer;
-  margin: -1% -1% 5% -1%;
+  margin-top:5%;
   }
 
   .float-button:hover {
-    right: 10px;
+    right: 0px;
     }
 
+  .cimg {
+    width: 35px;
+    height: 35px;
+    }
+    .cspan a {
+      margin: 1%;
+      color: rgb(0, 0, 0);
+  }
+
 .b1 {
-  right: -272px;
-  top: 13%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  right: -225px;
+  top: 0.1%;
 }
 
 .b2 {
-  right: -162px;
-  top: 21%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  right: -160px;
+  top: 10%;
 }
 
 .b3 {
-  right: -305px;
-  top: 29%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  right: -290px;
+  top: 20%;
 }
+
 
 .message {
   display: none;
@@ -122,9 +141,8 @@ body {
   background-color: rgba(178, 107, 245, 0.6);
   color: rgb(255, 255, 255);
   padding: 1rem;
-  top: 21%;
+  top: 20%;
   right: 10%;
-  transition: display 1s;
   box-shadow: 2px 14px 25px 0px rgba(0,0,0,0.68);
   border-radius: 200px 0px 200px 200px;
 
@@ -451,9 +469,24 @@ a {
   .bt-cont {
       flex-direction: column;
   }
+
+  .b1 {
+    top: 5%;
+  }
+
+  .b2 {
+    top: 13%;
+  }
+
+  .b3 {
+    top: 22%;
+  }
+  .float-button:hover {
+    right: 10px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .header-item h1 {
     text-align: center;
     font-size: 1rem;
@@ -479,5 +512,17 @@ a {
   }
   h1 {
     margin-top: 1rem;
+  }
+  
+  .b1 {
+    top: 5%;
+  }
+
+  .b2 {
+    top: 15%;
+  }
+
+  .b3 {
+    top: 25%;
   }
 }
